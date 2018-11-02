@@ -1,0 +1,19 @@
+{
+  "name": "spunk",
+  "version": "0.0.1",
+  "description": "data processing framework geared towards building trading bots and simulations but can be used for any type of application",
+  "main": "spunk.js",
+  "repository": "https://github.com/charbz/spunk",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "Charbel Ghossain",
+  "license": "MIT",
+  "dependencies": {
+    "csvtojson": "^2.0.8",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
