@@ -41,7 +41,7 @@ csv.init().then(() => {
 */
 ```
 
-
+<br>
 Add new data to your csv provider on the fly
 
 ```javascript
@@ -70,7 +70,7 @@ console.log(csv.getData());
 ```
 
 
-
+<br>
 Add some event listeners
 
 ```javascript
@@ -91,7 +91,7 @@ csv.add({
 */
 ```
 
-
+<br>
 
 Create a Moving Average provider
 
@@ -105,19 +105,15 @@ MA.addEventListener('update', (data) => {
   console.log(`Current Moving Average: ${data}`);
 });
 
-prices.add(12);
-/* Console:  Current Moving Average: 8.8 */
+prices.add(12); // Console:  Current Moving Average: 8.8
 
-prices.add(6);
-/* Console:  Current Moving Average: 8.4 */
+prices.add(6); // Console:  Current Moving Average: 8.4
 
-console.log(MA.getData());
-/* Console: [8.8, 8.4] */
+console.log(MA.getData()); // Console: [8.8, 8.4]
 
-console.log(prices.getData());
-/* Console: [10, 8, 9, 8, 7, 12, 6] */
+console.log(prices.getData()); // Console: [10, 8, 9, 8, 7, 12, 6]
 ```
-
+<br>
 
 ### Contribute
 
