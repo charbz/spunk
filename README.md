@@ -19,7 +19,6 @@ Load data from multiple CSV files:
 | ------------ | ------------ |
 |date, asset, price  <br> 01-01-2018, BTC, 6000 <br> 01-02-2018, BTC, 6028 <br> ...  |  date, asset, price  <br> 01-01-2018, ETH, 199 <br> 01-02-2018, ETH,  208 <br> ...  |
 
-<br>
 ```javascript
 const Spunk = require('spunk');
 
