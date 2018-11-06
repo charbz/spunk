@@ -54,8 +54,6 @@ csv.add({
 
 console.log(csv.getData());
 
-
-
 /*
  Console:
  [
