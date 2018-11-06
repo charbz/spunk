@@ -1,6 +1,6 @@
 {
   "name": "spunk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "data processing framework geared towards building trading bots and simulations but can be used for any type of application",
   "main": "spunk.js",
   "repository": "https://github.com/charbz/spunk",
