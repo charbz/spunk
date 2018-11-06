@@ -43,10 +43,10 @@ csv.init().then(() => {
 
 <br>
 Add new data to your csv provider on the fly
+
 <br>
 
 ```javascript
-...
 csv.add({
   "date": "01-03-2018",
   "asset": "LTC",
@@ -73,10 +73,10 @@ console.log(csv.getData());
 
 <br>
 Add some event listeners
+
 <br>
 
 ```javascript
-...
 csv.addEventListener('update', (data) => {
   console.log(`Added a new entry for asset: ${data.asset}`);
 });
