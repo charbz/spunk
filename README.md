@@ -13,7 +13,7 @@ Spunk is a simple yet powerful data processing framework for building trading bo
 
 ### Examples
 
-Load data from multiple CSV files
+Load data from multiple CSV files:
 
 | CSV1.csv  | CSV2.csv  |
 | ------------ | ------------ |
@@ -42,8 +42,7 @@ csv.init().then(() => {
 ```
 
 <br>
-Add new data to your csv provider on the fly
-
+Add new data to your csv provider on the fly:
 <br>
 
 ```javascript
@@ -72,8 +71,7 @@ console.log(csv.getData());
 
 
 <br>
-Add some event listeners
-
+Add some event listeners:
 <br>
 
 ```javascript
@@ -94,8 +92,7 @@ csv.add({
 ```
 
 <br>
-
-Create a Moving Average provider
+Create a Moving Average provider:
 <br>
 
 ```javascript
