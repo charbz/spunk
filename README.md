@@ -1,6 +1,8 @@
 ### Spunk
 Spunk is a simple yet powerful data processing framework for building trading bots and simulations. It can also be used for any type of data processing application.
 
+
+
 ### Features
 
 - Create data providers from multiple sources ( Csv, Json,  Web-Api ... etc) 
@@ -8,12 +10,10 @@ Spunk is a simple yet powerful data processing framework for building trading bo
 - Pipe your data into data processors
 - Growing library of built-in providers and processors
 
-### Installation
-Spunk is only tested for server-side at the moment `npm install spunk`
 
 ### Examples
 
-**Load data from multiple CSV files**
+Load data from multiple CSV files
 
 | CSV1.csv  | CSV2.csv  |
 | ------------ | ------------ |
@@ -29,18 +29,20 @@ csv.init().then(() => {
   console.log(csv.getData());
 });
 
+
 /*
-     Console:
-     [
-       { "date": "01-02-2018", "asset": "ETH", "price": 208 },
-       { "date": "01-01-2018", "asset": "ETH", "price": 199 },
-       { "date": "01-02-2018", "asset": "BTC", "price": 6028 },
-       { "date": "01-01-2018", "asset": "BTC", "price": 6000 },
-     ]
+ Console:
+ [
+   { "date": "01-02-2018", "asset": "ETH", "price": 208 },
+   { "date": "01-01-2018", "asset": "ETH", "price": 199 },
+   { "date": "01-02-2018", "asset": "BTC", "price": 6028 },
+   { "date": "01-01-2018", "asset": "BTC", "price": 6000 },
+ ]
 */
 ```
 
-**Add new data to your csv provider on the fly **
+
+Add new data to your csv provider on the fly
 
 ```javascript
 ...
@@ -52,20 +54,24 @@ csv.add({
 
 console.log(csv.getData());
 
+
+
 /*
-     Console:
-     [
-       { "date": "01-02-2018", "asset": "ETH", "price": 208 },
-       { "date": "01-01-2018", "asset": "ETH", "price": 199 },
-       { "date": "01-02-2018", "asset": "BTC", "price": 6028 },
-       { "date": "01-01-2018", "asset": "BTC", "price": 6000 },
-       { "date": "01-03-2018", "asset": "LTC", "price": 55 }   <------
-     ]
+ Console:
+ [
+   { "date": "01-02-2018", "asset": "ETH", "price": 208 },
+   { "date": "01-01-2018", "asset": "ETH", "price": 199 },
+   { "date": "01-02-2018", "asset": "BTC", "price": 6028 },
+   { "date": "01-01-2018", "asset": "BTC", "price": 6000 },
+   { "date": "01-03-2018", "asset": "LTC", "price": 55 }   <------
+ ]
 */
 
 ```
 
-**Add some event listeners **
+
+
+Add some event listeners
 
 ```javascript
 ...
@@ -80,12 +86,14 @@ csv.add({
 });
 
 /*
-     Console:
-     Added a new entry for asset: XLM
+ Console:
+ Added a new entry for asset: XLM
 */
 ```
 
-**Create a Moving Average provider**
+
+
+Create a Moving Average provider
 
 ```javascript
 const Spunk = require("../spunk");
@@ -109,6 +117,8 @@ console.log(MA.getData());
 console.log(prices.getData());
 /* Console: [10, 8, 9, 8, 7, 12, 6] */
 ```
+
+
 ### Contribute
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
