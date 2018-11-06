@@ -1,17 +1,17 @@
 ### Spunk
 Spunk is a simple yet powerful data processing framework for building trading bots and simulations. It can also be used for any type of data processing application.
 
-###Features
+### Features
 
 - Create data providers from multiple sources ( Csv, Json,  Web-Api ... etc) 
 - Add event-listeners to your data providers
 - Pipe your data into data processors
 - Growing library of built-in providers and processors
 
-###Installation
+### Installation
 Spunk is only tested for server-side at the moment `npm install spunk`
 
-###Examples
+### Examples
 
 **Load data from multiple CSV files**
 
@@ -109,7 +109,7 @@ console.log(MA.getData());
 console.log(prices.getData());
 /* Console: [10, 8, 9, 8, 7, 12, 6] */
 ```
-###Contribute
+### Contribute
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
