@@ -43,6 +43,7 @@ csv.init().then(() => {
 
 <br>
 Add new data to your csv provider on the fly
+<br>
 
 ```javascript
 ...
@@ -72,6 +73,7 @@ console.log(csv.getData());
 
 <br>
 Add some event listeners
+<br>
 
 ```javascript
 ...
@@ -94,6 +96,7 @@ csv.add({
 <br>
 
 Create a Moving Average provider
+<br>
 
 ```javascript
 const Spunk = require("../spunk");
