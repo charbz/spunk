@@ -84,8 +84,7 @@ csv.add({
 });
 
 /*
- Console:
- Added a new entry for asset: XLM
+ Console: Added a new entry for asset: XLM
 */
 ```
 
